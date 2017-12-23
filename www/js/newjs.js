@@ -57,10 +57,5 @@ showTime()
 
 /* 
 Add a span tag to the temperature div, make it clickable so it can be used for temperature conversion.
-Let the Weather update circle be at the top
 Find out how to make the returned icon the source of the image.
-Find a suitable color to give the circles so they match with the background image
-Make a footer for the app.
-write a function for the conversion of celsius to fahrenheit
-
 */
