@@ -12,27 +12,27 @@ window.onload = function () {
             var stringified = JSON.parse(request.responseText)
             console.log(stringified)
             var location = document.getElementById('location')
-            location.innerHTML = stringified.name + ', ' + stringified.sys.country
+            location.innerHTML = stringified.name + ', ' + stringified.sys.country;
             var temp = document.getElementById('temperature')
-            temp.innerHTML = stringified.main.temp + '&#176;'
-            var weatherCondition = document.getElementById('weather-condition')
-            weatherCondition.innerHTML = stringified.weather[0].description
+            temp.innerHTML = stringified.main.temp + '&#176;';
+            var weatherCondition = document.getElementById('weather-condition');
+            weatherCondition.innerHTML = stringified.weather[0].description;
           // var image = document.getElementById("image")
           // image.innerHTML = stringified.weather[0].icon
           } else {
-            console.log("Error: Can't get any data from that source")
+            console.log("Error: Can't get any data from that source");
           }
         }
       }
-      request.send()
+      request.send();
     })
   }
 }
 
 function showTime () {
   // body...
-  var date = new Date()
-  var hr = date.getHours()
+  var date = new Date();
+  var hr = date.getHours();
   var min = date.getMinutes()
   var sec = date.getSeconds()
   var session = 'AM';
@@ -44,16 +44,16 @@ function showTime () {
     hr = hr - 12
     session = 'PM'
   }
-  hr = (hr < 10) ? '0' + hr : hr
-  min = (min < 10) ? '0' + min : min
-  sec = (sec < 10) ? '0' + sec : sec
+  hr = (hr < 10) ? '0' + hr : hr;
+  min = (min < 10) ? '0' + min : min;
+  sec = (sec < 10) ? '0' + sec : sec;
 
-  var time = hr + ':' + min + ':' + sec + ' ' + session
-  document.getElementById('time').innerText = time
-  setTimeout(showTime, 1000)
+  var time = hr + ':' + min + ':' + sec + ' ' + session;
+  document.getElementById('time').innerText = time;
+  setTimeout(showTime, 1000);
 }
 
-showTime()
+showTime();
 
 /* 
 Add a span tag to the temperature div, make it clickable so it can be used for temperature conversion.

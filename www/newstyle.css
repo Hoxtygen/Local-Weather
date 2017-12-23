@@ -23,8 +23,28 @@ p 			{
 	text-transform: uppercase;
 }
 
+.wrapper .center-block span#temperature 		{
+	display: inline-block;
+	padding-top: 80px;
+	font-size: 30px;
+}
+
+
+.wrapper .center-block button 			{
+	font-size: 30px;
+	background: transparent;
+	border: none;
+	margin-left: -15px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top: 47%;
+	left: 57%;
+}
+
 .wrapper {
-	 border: 1px solid #fff; 
+	 /* border: 1px solid #fff;  */
 	margin-top: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px;
