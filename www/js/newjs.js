@@ -35,9 +35,9 @@ function showTime () {
   var hr = date.getHours()
   var min = date.getMinutes()
   var sec = date.getSeconds()
-  var session = 'AM';
+  var session = 'AM'
   if (hr === 0) {
-    hr = 12;
+    hr = 12
   }
 
   if (hr > 12) {
@@ -54,6 +54,18 @@ function showTime () {
 }
 
 showTime()
+
+function convertToF (celsius) {
+  var fahrenheit
+  // Only change code below this line
+  fahrenheit = (celsius * 9 / 5) + 32;
+
+  // Only change code above this line
+  return fahrenheit;
+}
+
+// Change the inputs below to test your code
+convertToF(30);
 
 /* 
 Add a span tag to the temperature div, make it clickable so it can be used for temperature conversion.
