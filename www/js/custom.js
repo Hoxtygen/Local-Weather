@@ -31,3 +31,16 @@ function convertToF (celsius) {
 
 // Change the inputs below to test your code
 console.log(convertToF(23))
+
+btn.onclick = function () {
+  if (btn.innerText === 'C') {
+    btn.innerText = 'F'
+    temp.innerHTML = temp1
+  } else if (btn.innerText === 'F') {
+    btn.innerText = 'C'
+    temp.innerHTML = temp
+  } else {
+    btn.innerText = "C";
+    temp.innerHTML = temp;
+  }
+}
