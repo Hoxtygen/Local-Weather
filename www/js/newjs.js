@@ -13,12 +13,36 @@ window.onload = function () {
             console.log(stringified)
             var location = document.getElementById('location')
             location.innerHTML = stringified.name + ', ' + stringified.sys.country
-            var temp = document.getElementById('temperature')
-            temp.innerHTML = stringified.main.temp + '&#176;'
-            var weatherCondition = document.getElementById('weather-condition')
-            weatherCondition.innerHTML = stringified.weather[0].description
-          // var image = document.getElementById("image")
-          // image.innerHTML = stringified.weather[0].icon
+            // var img = document.createElement('img');
+            // img.src = 'stringified.weather[0].icon';
+            document.getElementById('image-container').innerHTML = "<img src = 'stringified.weather[0].icon'>";
+            var temp = document.getElementById('temperature');
+            temp.innerHTML = (stringified.main.temp).toFixed(0) + '&#176;';
+            var weatherCondition = document.getElementById('weather-condition');
+            weatherCondition.innerHTML = stringified.weather[0].description;
+            var celsius = (stringified.main.temp).toFixed(0)
+            var btn = document.getElementById('btn')
+            var temp1 = convertToF(celsius)
+
+            function convertToF (celsius) {
+              var fahrenheit
+              // Only change code below this line
+              fahrenheit = (celsius * 9 / 5) + 32
+
+              // Only change code above this line
+              return fahrenheit + '&#176;'
+            }
+            convertToF(celsius)
+
+            btn.onclick = function () {
+              if (btn.innerText === 'C') {
+                btn.innerText = 'F'
+                temp.innerHTML = temp1
+              }   else {
+                btn.innerText = 'F'
+                btn.innerHTML = temp
+              }
+            }
           } else {
             console.log("Error: Can't get any data from that source")
           }
@@ -68,11 +92,8 @@ function convertToF (celsius) {
 convertToF(30);
 
 /* 
-Add a span tag to the temperature div, make it clickable so it can be used for temperature conversion.
-Let the Weather update circle be at the top
 Find out how to make the returned icon the source of the image.
-Find a suitable color to give the circles so they match with the background image
-Make a footer for the app.
-write a function for the conversion of celsius to fahrenheit
-
 */
+/* var img = document.createElement("img")
+img.src = ""
+document.getElementById("image-container").appendChild(img); */

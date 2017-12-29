@@ -8,6 +8,11 @@ body 		{
 	color: #fff;
 }
 
+p 			{
+	font-size: 14px;
+	line-height: 1.5;
+}
+
 .heading {
 	font-family: "Patua One";
 	padding-top: 10px;
@@ -21,13 +26,38 @@ body 		{
 	text-transform: uppercase;
 }
 
-.wrapper {
-	 /* border: 1px solid #fff;  */
+.wrapper .center-block span#temperature 		{
+	display: inline-block;
+	font-size: 30px;
+}
+
+
+/* .wrapper .center-block button 			{
+	font-size: 30px;
+	background: transparent;
+	border: none;
+	margin-left: 5px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top: 47%;
+	left: 57%;
+} */
+
+button 		{
+	border: none;
+	padding: 10px;
+	background: transparent;
+	font-size: 30px;
+}
+
+ .wrapper {
 	margin-top: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-}
-
+} 
+ 
 .info-box {
 	/* border: 1px solid mediumseagreen; */
 	width: 200px;
@@ -36,11 +66,14 @@ body 		{
 	/* background: #00b230; */
 	background: #555;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.info-box h3, .info-box h2 {
+/* .info-box h3, .info-box h2 {
 	padding-top: 80px;
-}
+} */
 
 #wrapper 		{
 	border: 2px solid magenta;
@@ -50,6 +83,30 @@ body 		{
 	display: none
 }
 
-.update 		{
+#footer 		{
+	width: 100%;
+	margin-top: 15px;
+}
+
+.text-container 		{
+	padding-top: 15px;
+	padding-bottom: 15px;
 	background-color: #222;
+	letter-spacing: 1px;
+}
+
+#footer p 			{
+	font-size: 16px;
+	color: #fff;
+}
+
+#footer a 		{
+	font-size: 18px;
+	color: #60768b;
+}
+
+
+#footer a:hover 			{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.5);
 }
