@@ -25,12 +25,11 @@ p 			{
 
 .wrapper .center-block span#temperature 		{
 	display: inline-block;
-	padding-top: 80px;
 	font-size: 30px;
 }
 
 
-.wrapper .center-block button 			{
+/* .wrapper .center-block button 			{
 	font-size: 30px;
 	background: transparent;
 	border: none;
@@ -41,15 +40,21 @@ p 			{
 	position: absolute;
 	top: 47%;
 	left: 57%;
+} */
+
+button 		{
+	border: none;
+	padding: 10px;
+	background: transparent;
+	font-size: 30px;
 }
 
-.wrapper {
-	 /* border: 1px solid #fff;  */
+ .wrapper {
 	margin-top: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-}
-
+} 
+ 
 .info-box {
 	/* border: 1px solid mediumseagreen; */
 	width: 200px;
@@ -58,11 +63,14 @@ p 			{
 	/* background: #00b230; */
 	background: #555;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.info-box h3, .info-box h2 {
+/* .info-box h3, .info-box h2 {
 	padding-top: 80px;
-}
+} */
 
 #wrapper 		{
 	border: 2px solid magenta;
