@@ -38,11 +38,11 @@ window.onload = function () {
               if (btn.innerText === 'C') {
                 btn.innerText = 'F'
                 temp.innerHTML = temp1
-              }   else {
+              }   else  {
                 btn.innerText = 'F'
                 btn.innerHTML = temp
               }
-            }
+            };//btn onclick ends
           } else {
             console.log("Error: Can't get any data from that source")
           }
