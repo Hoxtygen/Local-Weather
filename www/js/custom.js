@@ -32,23 +32,6 @@ function convertToF (celsius) {
 // Change the inputs below to test your code
 console.log(convertToF(23))
 
-<<<<<<< HEAD
-// btn.onclick = function () {
-//   if (btn.innerText === 'C') {
-//     btn.innerText = 'F'
-//     temp.innerHTML = temp1
-//   }   else {
-//     btn.innerText = 'F'
-//     btn.innerHTML = temp
-//   }
-// }; // btn onclick ends
-
-btn.onclick = function () {
-  if (btn.innerText === "C") {
-    btn.innerText = "F";
-    temp.innerHTML = temp1;
-  } else if(btn.innerText === "F") {
-=======
 btn.onclick = function () {
   if (btn.innerText === 'C') {
     btn.innerText = 'F'
@@ -57,8 +40,11 @@ btn.onclick = function () {
     btn.innerText = 'C'
     temp.innerHTML = temp
   } else {
->>>>>>> test-branch
     btn.innerText = "C";
     temp.innerHTML = temp;
   }
 }
+
+document.getElementById('image-container').innerHTML = "<img src = " + stringified.weather[0].icon + ">";
+
+//mot01, sorinr on gitter

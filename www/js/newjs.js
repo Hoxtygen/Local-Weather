@@ -15,8 +15,7 @@ window.onload = function () {
             location.innerHTML = stringified.name + ', ' + stringified.sys.country
             // var img = document.createElement('img')
             // img.src = 'stringified.weather[0].icon'
-            document.getElementById('image-container').innerHTML = "<img src = 'stringified.weather[0].icon'>"
-            var temp = document.getElementById('temperature')
+            document.getElementById('image-container').innerHTML = "<img src = " + stringified.weather[0].icon + ">" ;           var temp = document.getElementById('temperature')
             var temp0 = (stringified.main.temp).toFixed(0) + '&#176;'
             temp.innerHTML = temp0;
             var weatherCondition = document.getElementById('weather-condition')
@@ -82,15 +81,11 @@ function showTime () {
 showTime()
 
 function convertToF (celsius) {
-  var fahrenheit
-  // Only change code below this line
+  var fahrenheit;
   fahrenheit = (celsius * 9 / 5) + 32;
-
-  // Only change code above this line
   return fahrenheit;
 }
 
-// Change the inputs below to test your code
 convertToF(30);
 
 /* 
